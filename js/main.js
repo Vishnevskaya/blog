@@ -2,7 +2,7 @@
     $.fn.extend({ 
         MyPagination: function(options) {
             var defaults = {
-                height: 400,
+                height: 500,
                 fadeSpeed: 400
             };
             var options = $.extend(defaults, options);
@@ -97,7 +97,7 @@
 
 // Инициализация 
 jQuery(window).load(function() {
-    $('#content').MyPagination({height: 400, fadeSpeed: 400});
+    $('#content').MyPagination({height: 500, fadeSpeed: 400});
 });
 
 showHomePage = function(page){

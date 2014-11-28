@@ -114,11 +114,12 @@ input[name=topsearch]{
 #content {
 /**	outline: solid 1px #000;**/
     position:relative;
-    height:400px;
+    height:600px;
 	margin-left: 328px;
 	margin-top:15px;
 	weight:300px;
 	padding-left:10px;
+	text-align: justify;
 }
 #content .page {
 	/**outline: solid 1px #000;**/
@@ -127,8 +128,52 @@ input[name=topsearch]{
 	weight:300px;
 	padding-right:100px;
 	font-color: #919f88;
+	text-align: justify;
 	
 }
+.gallery a img{    
+    /* округления старт */
+    -webkit-border-radius: 25px;
+    -moz-border-radius:  25px;
+    border-radius:  25px;
+    /* округления конец */
+    
+    /* transition старт */
+    -webkit-transition:All 1s ease;
+    -moz-transition:All 1s ease;
+    -o-transition:All 1s ease;
+    transition: all 1.0s ease;
+    /* transition конец */
+    
+    /* Тень старт */
+    -webkit-box-shadow: 0px 2px 4px 1px #DFDFDF;
+    -moz-box-shadow: 0px 2px 4px 1px #DFDFDF;
+    box-shadow: 0px 2px 4px 1px #DFDFDF; 
+    /* Тень конец */
+    
+    /* Прозрачнсоть старт */
+    -moz-opacity: 0.70;
+    opacity: 0.70;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+    /* Прозрачнсоть конец */
+    
+    margin-right:5px;     /* Отступ справа */
+    padding:10px; /* Внутренние отступы */
+    display:inline-block; /* отображение */
+    height:150px; /* Высота */
+    margin-left: 45px;
+}
+.gallery a img:hover{
+    -moz-opacity: 1;
+    opacity: 1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);
+}
+
+.gallery a{
+    outline:0; border:0;
+}
+
+
 .pagination{
     padding: 2px;
 	margin-left:328px;
