@@ -2,14 +2,15 @@
 <html>
 <head>
 	<title>Pancake</title>
-<!--	<meta charset="windows-1251">  -->
+
 	<meta charset="utf-8" />
 	
 		<link rel="stylesheet" href="../css/main.css" type="text/css" />
+		<link rel="stylesheet" href="../css/calendar.css" type="text/css" />
 		<script src="../js/jquery.min.js"></script>
 		<script src="../js/main.js"></script>
-		<script src="../js/news.js"></script>
-		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="../js/calendar.js"></script>
+
 
 
 </head>
@@ -17,20 +18,14 @@
 	<div id="page_align" class="b3radius">
 
 		<div id="header">
-			<!--Поиск в хэдере-->
-			<div id="search">
-				<form method=get action="javascript:void(0)" onsubmit="search(this); return false;">
-					<a href="#"><img src="../images/search.png" alt="Поиск по сайту" width="15" class="search_img"></a>
-					<input type="text" name="topsearch" placeholder="Search" class="b3radius" value="">
-				</form>
-			</div>
+			
 		</div>
 
 		<div id="sidebar">
 			<div id="logo">
 				<img src="../images/logo.png" class="logo_img">
 			</div>
-			
+
 			<div class="sb_nav">
 					<ul>
 						<li><a href="../index.html"><i></i>Home</li>
@@ -48,19 +43,31 @@
 						<li><a href="#" id="next" class="prevnext"></a></li>
 					</ul>
 			</div>
-	
-		<div id="content" class="content">
 		
-			<script language="JavaScript">
-				print_news();
-			</script>
+			
+		   <div class="wrapper">
+		   			<ul id="posts-list" class="posts-container">
+						
+							<li data-id="id-1" data-type="post">
+							
+								<h3 class="blog-post-title"></h3>
+					            <p data-type="date" class="blog-post-date"></p>
+					            <p class="blog-post-content"></p>
+							
+							</li>
+		
+					</ul>
 
-		</div>
+				<script src="../js/content.js"></script>
+				
+				<h4>Поиск новостей по дате</h4>
+					<form action="" method="">
+						<p>От: <input id = "filterBegin" name="data1" class="date"><br> 
+						До: <input id = "filterEnd" name="data2" class="date"></p>
+						<input type="button" name="button1" id="btn" class="btn btn-primary" value = "Поиск" onclick="loadbtn(event)">
+					</form>
+		   </div>
 	
-
-
-
-
 		<div id="page_number" class="page_number">1</div>
 		<div class="pagination">
 					<ul>
@@ -71,7 +78,7 @@
 
 		<div id="footer">
 		</div>
-			
+		
 		<div class="clr">
 		</div>
 

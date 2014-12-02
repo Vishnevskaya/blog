@@ -156,7 +156,6 @@ input[name=topsearch]{
     opacity: 0.70;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
     /* Прозрачнсоть конец */
-    
     margin-right:5px;     /* Отступ справа */
     padding:10px; /* Внутренние отступы */
     display:inline-block; /* отображение */
@@ -164,7 +163,7 @@ input[name=topsearch]{
     margin-left: 45px;
 }
 .gallery a img:hover{
-    -moz-opacity: 1;
+   -moz-opacity: 1;
     opacity: 1;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);
 }
@@ -224,3 +223,93 @@ input[name=topsearch]{
 	margin-top: -122px
 	border-bottom: solid 5px #919f88;
 }	
+
+input.date {
+	width:7em; 
+	text-align:right;
+}
+
+.mm {
+	position:absolute; 
+	padding:.2em; 
+	border:1px solid #ccc; 
+	background-color:#919f88; 
+	z-index:2;
+	/* opacity: 0.70;*/
+}
+.mm table {
+	border-collapse:separate; 
+	table-layout:fixed;
+	text-align:center; 
+	font-family:arial, tahoma; 
+	font-size:11px;
+}
+.mm col {
+	width:2em; 
+}
+.mm td {padding:0; 
+	vertical-align:middle; 
+	height:1.5em; 
+}
+.mm td div {
+	padding: .1em 0 0 0; 
+	border:1px solid #999; 
+	border-color:#ddd #777 #777 #ddd; 
+	cursor:default;
+}
+.mm td div:hover, .mm td .hover {
+	background-color:#eee; 
+	border-color:#777 #ddd #ddd #777 ;
+}
+.mm div.red {
+	color:#c00;
+}
+.mm select {
+	margin-right:0;
+}
+.mm .ri {
+	text-align:right;
+}
+.mm p {
+	margin:0;
+}
+.disnone {
+	display:none;
+}
+
+ol {
+	text-align:left; 
+	width:40em; 
+	font-size:.75em; 
+	margin:0 auto; 
+	font-family:verdana;
+}
+
+.metka {
+	background-image:url(img/metka.gif); 
+	background-repeat:no-repeat; 
+	background-position:right bottom; 
+}
+
+
+.posts-container > li {
+  display: table;
+  padding: 10px;
+  margin-left: 10px;
+  width: 400px;
+  color: #00261C;
+  border-bottom: 1px dotted #DDD;
+}
+.wrapper {
+ 
+  width: 650px;
+  min-height: 600px;
+  position: relative;
+  margin: 20px auto;
+  margin-left: 328px;
+}
+#btn{
+	color: #ece4d9;
+	background:#919f88; 
+	border-radius: 5px;
+}
